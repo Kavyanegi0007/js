@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+         
+            font-family: calibri;
+            
+        }
+
+        .container{
+            width:100%;
+            padding:5%;
+            background:#000000;
+        }
+
+        .row{
+            width:100%;
+            
+        }
+
+        .heading{
+            width:100%;
+            background:black;
+            color:white;
+            padding:5px 20px;
+            font-size:1.2em;
+            cursor: pointer;
+        }
+.mt-1{margin-top:2em;}
+.mt-2{margin-top:1em;}
+        .content{
+            width:100%;
+            background:white;
+            height:0;
+            overflow:hidden;
+            transition:.5s;
+        }
+.show{
+    height:150px;
+}
+        p{padding:20px; line-height:20pt;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>FAQ</h2>
+
+        <div class="row mt-2">
+            <div class="heading" onclick="showAccordion(0)">Web Designing</div>
+            <div class="content show">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus odit iusto culpa porro? Explicabo veritatis, vero cupiditate possimus suscipit labore quo itaque provident repellendus officiis eveniet obcaecati eaque doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magni perferendis repellat architecto laudantium in reiciendis qui tempore optio minus quae delectus ut officiis, voluptas sapiente modi dolores nobis. Quod!
+                </p>
+            </div>
+        </div><!------row------>
+
+        <div class="row mt-2">
+            <div class="heading" onclick="showAccordion(1)">Web Development</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus odit iusto culpa porro? Explicabo veritatis, vero cupiditate possimus suscipit labore quo itaque provident repellendus officiis eveniet obcaecati eaque doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magni perferendis repellat architecto laudantium in reiciendis qui tempore optio minus quae delectus ut officiis, voluptas sapiente modi dolores nobis. Quod!
+                </p>
+            </div>
+        </div><!------row------>
+
+        <div class="row mt-2">
+            <div class="heading" onclick="showAccordion(2)">Mean/Mern</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus odit iusto culpa porro? Explicabo veritatis, vero cupiditate possimus suscipit labore quo itaque provident repellendus officiis eveniet obcaecati eaque doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magni perferendis repellat architecto laudantium in reiciendis qui tempore optio minus quae delectus ut officiis, voluptas sapiente modi dolores nobis. Quod!
+                </p>
+            </div>
+        </div><!------row------>
+
+        <div class="row mt-2">
+            <div class="heading" onclick="showAccordion(3)">Python</div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus odit iusto culpa porro? Explicabo veritatis, vero cupiditate possimus suscipit labore quo itaque provident repellendus officiis eveniet obcaecati eaque doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda magni perferendis repellat architecto laudantium in reiciendis qui tempore optio minus quae delectus ut officiis, voluptas sapiente modi dolores nobis. Quod!
+                </p>
+            </div>
+        </div><!------row------>
+    </div>
+</body>
+</html>
+
+<script>
+    function showAccordion(n)
+    {
+        var data= document.getElementsByClassName("content");
+
+        for(var i=0;i<data.length;i++)
+        {
+            data[i].style.height="0";
+            data[n].style.height="150px";
+        }
+    }
+</script>
