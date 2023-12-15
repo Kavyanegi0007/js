@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           font-family: calibri; 
+        }
+
+        .hide{
+            /*display: none;*/
+            height:50px;
+            opacity:.3;
+            transition:.5s all;
+            overflow:hidden;
+        }
+        .show{
+            /*display: block;*/
+            height:400px;
+            opacity:1;
+        }
+
+        button{
+            border:none;
+            border-radius:20px;
+            padding:10px 30px;
+            color:black;
+            background:#f7d26c;
+        }
+    </style>
+</head>
+<body>
+    <h2>Full Stack Developer</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque expedita incidunt delectus ipsam dicta consequatur quaerat magni distinctio, veniam possimus! Hic, laborum. Voluptas asperiores repudiandae tempora ipsa nemo hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente, deleniti mollitia voluptate inventore perspiciatis odit vero nostrum. Consequuntur ipsum, illum dicta doloribus similique officia quia quisquam dolore minus minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime consequatur impedit, sunt necessitatibus ea similique ullam, tempore doloremque eos ipsa quidem perferendis, consequuntur aut autem. Sint omnis voluptate cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aut delectus expedita autem et, facere impedit atque explicabo, illum perspiciatis nam non eius sapiente nesciunt minus itaque tempora enim earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus dolorem veritatis iusto officia id reiciendis dolor suscipit vero nostrum. Enim, reiciendis unde quisquam culpa architecto inventore delectus provident magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa officia laborum rerum similique temporibus doloremque quo nisi, quas sunt quam. Eveniet aliquid amet illo quasi expedita officiis consectetur. Ratione?
+    </p>
+    <p class="hide">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque expedita incidunt delectus ipsam dicta consequatur quaerat magni distinctio, veniam possimus! Hic, laborum. Voluptas asperiores repudiandae tempora ipsa nemo hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente, deleniti mollitia voluptate inventore perspiciatis odit vero nostrum. Consequuntur ipsum, illum dicta doloribus similique officia quia quisquam dolore minus minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime consequatur impedit, sunt necessitatibus ea similique ullam, tempore doloremque eos ipsa quidem perferendis, consequuntur aut autem. Sint omnis voluptate cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aut delectus expedita autem et, facere impedit atque explicabo, illum perspiciatis nam non eius sapiente nesciunt minus itaque tempora enim earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus dolorem veritatis iusto officia id reiciendis dolor suscipit vero nostrum. Enim, reiciendis unde quisquam culpa architecto inventore delectus provident magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa officia laborum rerum similique temporibus doloremque quo nisi, quas sunt quam. Eveniet aliquid amet illo quasi expedita officiis consectetur. Ratione?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque expedita incidunt delectus ipsam dicta consequatur quaerat magni distinctio, veniam possimus! Hic, laborum. Voluptas asperiores repudiandae tempora ipsa nemo hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente, deleniti mollitia voluptate inventore perspiciatis odit vero nostrum. Consequuntur ipsum, illum dicta doloribus similique officia quia quisquam dolore minus minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime consequatur impedit, sunt necessitatibus ea similique ullam, tempore doloremque eos ipsa quidem perferendis, consequuntur aut autem. Sint omnis voluptate cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aut delectus expedita autem et, facere impedit atque explicabo, illum perspiciatis nam non eius sapiente nesciunt minus itaque tempora enim earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus dolorem veritatis iusto officia id reiciendis dolor suscipit vero nostrum. Enim, reiciendis unde quisquam culpa architecto inventore delectus provident magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa officia laborum rerum similique temporibus doloremque quo nisi, quas sunt quam. Eveniet aliquid amet illo quasi expedita officiis consectetur. Ratione?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque expedita incidunt delectus ipsam dicta consequatur quaerat magni distinctio, veniam possimus! Hic, laborum. Voluptas asperiores repudiandae tempora ipsa nemo hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente, deleniti mollitia voluptate inventore perspiciatis odit vero nostrum. Consequuntur ipsum, illum dicta doloribus similique officia quia quisquam dolore minus minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime consequatur impedit, sunt necessitatibus ea similique ullam, tempore doloremque eos ipsa quidem perferendis, consequuntur aut autem. Sint omnis voluptate cumque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aut delectus expedita autem et, facere impedit atque explicabo, illum perspiciatis nam non eius sapiente nesciunt minus itaque tempora enim earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus dolorem veritatis iusto officia id reiciendis dolor suscipit vero nostrum. Enim, reiciendis unde quisquam culpa architecto inventore delectus provident magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa officia laborum rerum similique temporibus doloremque quo nisi, quas sunt quam. Eveniet aliquid amet illo quasi expedita officiis consectetur. Ratione?
+    </p>
+
+    <button onclick="ReadMore()"> Read More</button>
+</body>
+</html>
+<script>
+    function ReadMore()
+    {
+        document.getElementsByTagName("p")[1].classList.toggle("show");
+    }
+</script>
