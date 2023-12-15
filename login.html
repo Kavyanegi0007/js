@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="UserName" id="user"><br><br>
+    <input type="password" placeholder="Password" name="" id="pass"><bR><br>
+        <button onclick="loginuser()">Login</button>
+    
+</body>
+</html>
+<script>
+    function loginuser()
+    {
+        var user=document.getElementById("user").value;
+        var pass=document.getElementById("pass").value;
+       var uname=["Ram@123","Mohan@123"];
+       var upass=['123','124'];
+//js flag
+       var status=false;
+       for(data in uname)
+       {
+        if(uname[data]==user && upass[data]==pass)
+        {
+           status=true;
+           break;
+        }
+    }
+    // outoftheloop
+
+        //condition
+        if(status)
+        {
+            alert("Login Success");
+        }
+        else{
+            alert("Wrong User");
+        }
+    }
+</script>
